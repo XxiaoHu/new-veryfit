@@ -1,1 +1,0 @@
-console.log("Hello World! (from create-block-blocks&#x2F;my-first-block block)");
