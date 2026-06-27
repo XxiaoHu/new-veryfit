@@ -1,10 +1,11 @@
 <?php
 
 /**
- * The template for displaying the footer
+ * The template for displaying the footer   
  */
 
 ?>
+<!-- 测试 -->
 
 </main><!-- #main -->
 </div><!-- #primary -->
@@ -14,7 +15,7 @@
         <div class="footer-section footer-brand">
             <div class="footer-logo">
                 <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/footerlogo.png" alt="<?php echo get_bloginfo('name'); ?>" />
-            </div>
+            </div>  
             <p class="footer-tagline">
                 <?php echo esc_html( pll__( 'Smart Tech Meets Everyday Life.', 'feryfit' ) ); ?>
             </p>
