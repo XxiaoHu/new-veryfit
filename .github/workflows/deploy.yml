@@ -1,0 +1,22 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1
+        with:
+          host: 47.239.77.95
+          username: root
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd /var/www/html
+            git pull --ff-only origin master
+            chown -R www-data:www-data /var/www/html --exclude='.git'
+            wp cache flush --path=/var/www/html 2>/dev/null || true
