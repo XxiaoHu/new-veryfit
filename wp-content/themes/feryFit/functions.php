@@ -199,7 +199,7 @@ require_once get_template_directory() . '/includes/class-contact-manager.php';
 // Load Customer Service Manager
 require_once get_template_directory() . '/includes/class-customer-service-manager.php';
 
-// add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_false');
 
 // Load FAQs Manager
 require_once get_template_directory() . '/includes/class-faqs-manager.php';
