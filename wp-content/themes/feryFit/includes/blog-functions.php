@@ -5,6 +5,7 @@
  * Functions to retrieve and display Blog posts on the frontend
  */
 
+// 测试
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
