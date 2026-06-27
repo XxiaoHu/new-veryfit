@@ -1,0 +1,69 @@
+/* Global Breadcrumb Styles */
+.feryfit-breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 20px;
+	background: #000;
+	padding-left: 288px;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+}
+
+.feryfit-breadcrumb::-webkit-scrollbar {
+	display: none;
+}
+
+.feryfit-breadcrumb__item {
+	color: #999;
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.feryfit-breadcrumb__item--current {
+	color: #fff;
+}
+
+.feryfit-breadcrumb__link {
+	color: #999;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.feryfit-breadcrumb__link:hover {
+	color: #fff;
+}
+
+.feryfit-breadcrumb__separator {
+	color: #999;
+	font-size: 14px;
+}
+
+:where(html[dir="rtl"], html[lang|="ar"]) .feryfit-breadcrumb {
+	direction: rtl;
+	padding-left: 20px;
+	padding-right: 288px;
+}
+
+@media screen and (max-width: 768px) {
+	.feryfit-breadcrumb {
+		padding: 15px;
+		gap: 6px;
+	}
+
+	:where(html[dir="rtl"], html[lang|="ar"]) .feryfit-breadcrumb {
+		padding: 15px;
+	}
+
+	.feryfit-breadcrumb__item,
+	.feryfit-breadcrumb__separator {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,18 @@
+# Backup files (UpdraftPlus)
+updraft/
+
+# Debug log
+debug.log
+
+# WordPress auto-generated
+upgrade/
+upgrade-temp-backup/
+cache/
+wflogs/
+
+# CI config not needed on server
+.github/
+README.md
+
+# Backup files
+*.bak
